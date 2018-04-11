@@ -1,0 +1,160 @@
+body {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(35,35,35);
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+/* HEADER =====================================================*/
+header {
+}
+
+/* Banner -----------------------------------------------------*/
+header#banner {
+  height: 100px;
+  min-width: 100%;
+  background-color: #FFA400;
+  position: relative;
+  z-index: 100;
+}
+
+header#banner #bannerImg {
+  display: block;
+  margin: 0 auto;
+  animation-name: slideFromTop;
+  animation-duration: 1s;
+}
+
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-200px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+/* Top bar -----------------------------------------------------*/
+header#topBar {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  min-width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  position: sticky;
+  z-index: 10;
+}
+
+#topBar nav {
+  width: 70px;
+  height: 70px;
+  transition: width 1ms;
+}
+
+#topBar nav i {
+  font-size: 50px;
+  margin: 10px;
+  margin-left: 14px;
+  margin-right: 14px;
+  transition: transform 0.5s, color 0.5s;
+}
+
+#topBar nav menu {
+  display: inline-block;
+  width: 300px;
+  background-color: black;
+  transform: translateX(-700px);
+  transition: transform 0.5s;
+}
+
+#topBar nav:hover {
+  width: 300px;
+}
+
+#topBar nav:hover > menu {
+  transform: translateX(0px);
+}
+
+#topBar nav:hover > .bars {
+  transform: rotate(0.25turn);
+  color: #FFA400;
+}
+
+#topBar #smallLogo {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 20;
+}
+
+header aside#toTop {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+header aside i.upArrow {
+  font-size: 2em;
+  margin: 19px;
+  margin-left: 21px;
+  margin-right: 21px;
+  transform: translateY(0px);
+  transition: transform 0.5s, color 0.5s;
+  position: absolute;
+}
+
+header aside i.upArrow2 {
+  font-size: 2em;
+  margin: 19px;
+  margin-left: 21px;
+  margin-right: 21px;
+  transform: translateY(50px);
+  transition: transform 0.5s, color 0.5s;
+  position: absolute;
+}
+
+header aside i.upArrow3 {
+  font-size: 2em;
+  margin: 19px;
+  margin-left: 21px;
+  margin-right: 21px;
+  transform: translateY(100px);
+  transition: transform 0.5s, color 0.5s;
+  position: absolute;
+}
+
+header aside:hover > .upArrow {
+  transform: translateY(-100px);
+  color: #FFA400;
+}
+
+header aside:hover > .upArrow2 {
+  transform: translateY(-50px);
+  color: #FFA400;
+}
+
+header aside:hover > .upArrow3 {
+  transform: translateY(0px);
+  color: #FFA400;
+}
+
+
+/* CONTENT ====================================================*/
+content {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(22,22,22,1);
+}
