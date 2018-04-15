@@ -1,0 +1,354 @@
+body {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  background-color: #4E5340;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(188, 171, 144, 1);
+  font-weight: bold;
+}
+
+hr {
+  width: 100%;
+}
+
+/* HEADER =====================================================*/
+header {
+}
+
+/* Banner -----------------------------------------------------*/
+header#banner {
+  height: 100px;
+  min-width: 100%;
+  background: url("https://camouflagepatterns.files.wordpress.com/2017/04/bondcamtemperateurbanm2superdigital.jpg");
+  position: relative;
+  z-index: 100;
+}
+
+header#banner #bannerImg {
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+  width: 250px;
+  animation-name: slideFromTop;
+  animation-duration: 1s;
+}
+
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-200px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+/* Top bar -----------------------------------------------------*/
+header#topBar {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  min-width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  position: sticky;
+  z-index: 10;
+}
+
+#topBar nav {
+  width: 50px;
+  height: 50px;
+}
+
+#topBar nav i {
+  font-size: 40px;
+  margin: 5px;
+  margin-left: 8px;
+  margin-right: 7px;
+  transition: transform 0.5s, color 0.5s;
+}
+
+#topBar nav menu {
+  display: inline-block;
+  width: 300px;
+  background-color: black;
+  transform: translateX(-800px);
+  transition: transform 0.5s;
+}
+
+#topBar nav menu ul {
+  font-size: 25px;
+  line-height: 40px;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+#topBar nav menu ul li ul {
+  font-size: 20px;
+  padding-left: 25px;
+}
+
+#topBar nav:hover {
+  width: 300px;
+}
+
+#topBar nav:hover > menu {
+  transform: translateX(0px);
+}
+
+#topBar nav:hover > .bars {
+  transform: rotate(0.25turn);
+  color: rgba(188, 171, 144, 1);
+}
+
+#topBar #smallLogo {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -25px;
+  z-index: 20;
+  width: 50px;
+  height: 50px;
+}
+
+header aside#toTop {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+header aside i.upArrow {
+  font-size: 2em;
+  margin: 9px;
+  margin-left: 11px;
+  margin-right: 11px;
+  transform: translateY(0px);
+  transition: transform 0.5s, color 0.5s;
+  position: absolute;
+}
+
+header aside i.upArrow2 {
+  font-size: 2em;
+  margin: 9px;
+  margin-left: 11px;
+  margin-right: 11px;
+  transform: translateY(50px);
+  transition: transform 0.5s, color 0.5s;
+  position: absolute;
+}
+
+header aside i.upArrow3 {
+  font-size: 2em;
+  margin: 9px;
+  margin-left: 11px;
+  margin-right: 11px;
+  transform: translateY(100px);
+  transition: transform 0.5s, color 0.5s;
+  position: absolute;
+}
+
+header aside:hover > .upArrow {
+  transform: translateY(-100px);
+  color: rgba(188, 171, 144, 1);
+}
+
+header aside:hover > .upArrow2 {
+  transform: translateY(-50px);
+  color: rgba(188, 171, 144, 1);
+}
+
+header aside:hover > .upArrow3 {
+  transform: translateY(0px);
+  color: rgba(188, 171, 144, 1);
+}
+
+
+/* CONTENT ====================================================*/
+content {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(22,22,22,1);
+}
+
+strong {
+  font-weight: bold;
+  color: rgba(188, 171, 144, 1);
+}
+
+content h1 {
+  font-weight: bold;
+  color: rgba(188, 171, 144, 1);
+  font-size: 30px;
+  margin: 10px;
+}
+
+content h2 {
+  font-weight: bold;
+  color: rgba(188, 171, 144, 1);
+  font-size: 25px;
+  margin: 10px;
+}
+
+content p {
+  text-align: justify;
+  margin: 10px;
+}
+
+content .rowNoAnim {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+content .rowNoAnim img {
+  margin: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+content .rowNoAnim .cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid;
+  border-color: rgba(22,22,22,1);
+  border-radius: 20px;
+  height: 100%
+}
+
+content .rowNoAnim .cell:hover {
+  color: rgba(188, 171, 144, 1);
+  font-weight: bold;
+  border-color: rgba(188, 171, 144, 1);
+}
+
+#ammo {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(22,22,22,1);
+}
+
+#ammo .sidebar {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid white;
+  width: 300px;
+  height: 100%;
+  padding: 10px;
+}
+
+#ammo .sidebarContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#ammo .sidebarContent p {
+  text-align: center;
+  margin: 0px;
+}
+
+.sidebarContent table {
+  width: 100%;
+  text-align: left;
+}
+
+.sidebarContent table tr th {
+  color: rgba(188, 171, 144, 1);
+  font-weight: bold;
+}
+
+
+
+#gauge, #gauge th, #gauge td {
+  border: 1px solid white;
+  padding: 5px;
+  margin: 10px;
+
+}
+/* Menu grid -----------------------------------------------------*/
+content .rowAnim {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+content .rowAnim img {
+  margin: 15px;
+  width: 200px;
+  height: 200px;
+  animation-name: test;
+  animation-duration: 1s;
+}
+
+@keyframes test {
+  from {
+    margin: -280px;
+  }
+
+  to {
+    margin: 15px;
+  }
+}
+
+content .rowAnim .cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid;
+  border-color: rgba(22,22,22,1);
+  border-radius: 20px;
+}
+
+content .rowAnim .cell:hover {
+  color: rgba(188, 171, 144, 1);
+  font-weight: bold;
+  border-color: rgba(188, 171, 144, 1);
+}
+
+/* MOBILE VERSION =================================================*/
+@media screen and (max-width: 870px) {
+  /* Nav width -----------------------------------------------------*/
+  #topBar nav:hover {
+    width: 50px;
+  }
+}
+
+/* Ammo page -----------------------------------------------------*/
+@media screen and (max-width: 700px) {
+  #ammo {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #ammo .sidebar {
+    width: 90%;
+  }
+
+  #ammo .sidebar img {
+    max-width: 100%;
+    height: auto;
+  }
+}
